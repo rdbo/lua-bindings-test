@@ -1,2 +1,10 @@
 local mylib = require("mylib")
 mylib.myfunction(1337)
+
+local data = mylib.create_struct()
+print(data["hello"])
+print(data["msg"])
+print(data["number"])
+print(data.bignumber)
+print(data)
+mylib.print_struct(data)
